@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PANOWZ LOVE ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #46101c, #12070a 55%, #050505);
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(#ffffff55 1px, transparent 1px),
+    radial-gradient(#ff4d6d44 1px, transparent 1px);
+  background-size: 45px 45px, 70px 70px;
+  animation: backgroundMove 15s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes backgroundMove {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 200px 200px, -200px 150px; }
+}
+
+.container {
+  width: 92%;
+  max-width: 650px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: rgba(20, 10, 13, 0.88);
+  border: 1px solid rgba(255, 80, 110, 0.35);
+  border-radius: 25px;
+  padding: 30px 22px;
+  margin: 40px 0;
+  box-shadow: 0 15px 50px rgba(0,0,0,.5);
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: #ff7188;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 8px;
+  color: #ffb3c0;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #6d2937;
+  outline: none;
+  background: #160b0e;
+  color: white;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #ff4d6d;
+  box-shadow: 0 0 15px #ff4d6d33;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #ff365d, #9e1734);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px #ff365d55;
+}
+
+.hidden {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.heart {
+  font-size: 55px;
+  animation: heartbeat 1.5s infinite;
+  display: inline-block;
+}
+
+@keyframes heartbeat {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.hero h2 {
+  font-size: 31px;
+  margin: 15px 0;
+}
+
+.hero span {
+  color: #ff6680;
+}
+
+.section {
+  margin-top: 25px;
+}
+
+.section h3 {
+  color: #ff7188;
+  margin-bottom: 12px;
+}
+
+.message {
+  line-height: 1.8;
+  color: #eee;
+  font-size: 15px;
+}
+
+.duration {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+  color: #ffd1d9;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.time-box {
+  background: #1b0b0f;
+  border: 1px solid #5e2632;
+  padding: 15px 5px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.time-box strong {
+  display: block;
+  font-size: 23px;
+  color: #ff5875;
+}
+
+.time-box small {
+  color: #aaa;
+}
+
+.reason {
+  padding: 13px;
+  margin: 8px 0;
+  border-left: 3px solid #ff4d6d;
+  background: #ffffff08;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  padding: 30px 0;
+  font-size: 13px;
+}
+
+.hearts {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+  animation: floatUp 2.5s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-250px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@media(max-width: 450px) {
+  h1 { font-size: 28px; }
+  .hero h2 { font-size: 26px; }
+  .countdown strong { font-size: 19px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- FORM -->
+  <div id="formPage" class="card">
+
+    <div class="logo">PANOWZ LOVE</div>
+
+    <h1>Untuk Kita ❤️</h1>
+
+    <p class="subtitle">
+      Masukkan sedikit informasi tentang hubungan kalian
+      untuk membuka pesan spesial ini.
+    </p>
+
+    <label>Nama Kamu</label>
+    <input id="yourName" type="text" placeholder="Contoh: Panowz">
+
+    <label>Nama Pasangan</label>
+    <input id="partnerName" type="text" placeholder="Contoh: Sayang">
+
+    <label>Tanggal Jadian</label>
+    <input id="relationshipDate" type="date">
+
+    <button onclick="startLove()">
+      Mulai Perjalanan Kita ❤️
+    </button>
+
+  </div>
+
+
+  <!-- WEBSITE UTAMA -->
+  <div id="mainPage" class="hidden">
+
+    <div class="card hero">
+
+      <div class="heart">❤️</div>
+
+      <h2>
+        Untuk <span id="displayPartner"></span>
+      </h2>
+
+      <p class="subtitle">
+        Yang selalu aku pilih, setiap hari.
+      </p>
+
+      <p>
+        Dari <b id="displayYour"></b>
+        untuk kamu ❤️
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="section">
+
+        <h3>⏳ Tentang Hubungan Kita</h3>
+
+        <div class="duration" id="duration">
+          Menghitung...
+        </div>
+
+        <p class="subtitle">
+          Kita memulai semuanya pada
+          <b id="displayDate"></b>
+        </p>
+
+      </div>
+
+      <div class="section">
+
+        <h3>🎂 Anniversary Berikutnya</h3>
+
+        <div class="countdown">
+
+          <div class="time-box">
+            <strong id="days">0</strong>
+            <small>Hari</small>
+          </div>
+
+          <div class="time-box">
+            <strong id="hours">0</strong>
+            <small>Jam</small>
+          </div>
+
+          <div class="time-box">
+            <strong id="minutes">0</strong>
+            <small>Menit</small>
+          </div>
+
+          <div class="time-box">
+            <strong id="seconds">0</strong>
+            <small>Detik</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="section">
+
+        <h3>💌 Pes
